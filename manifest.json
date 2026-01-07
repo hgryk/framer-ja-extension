@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Framer 日本語化",
+  "version": "1.0.0",
+  "description": "Framerのインターフェースを日本語化するChrome拡張",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://framer.com/*", "https://*.framer.com/*"],
+      "js": ["translations.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
